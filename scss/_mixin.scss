@@ -1,0 +1,5 @@
+@mixin padding($container-padding) {
+    text-align: center;
+    padding-top: $container-padding;
+    padding-bottom: 64px;
+}

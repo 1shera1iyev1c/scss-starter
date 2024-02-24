@@ -1,3 +1,8 @@
+.header__list, .header__content, .header__container {
+  display: flex;
+  align-items: center;
+}
+
 html {
   height: 100%;
 }
@@ -11,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  font-family: "Aladin";
+  font-family: sans-serif;
 }
 
 h2 {
@@ -46,6 +51,12 @@ img {
 
 main {
   flex-grow: 1;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
 }
 
 @font-face {
@@ -365,13 +376,125 @@ template {
   display: none;
 }
 
+header {
+  padding: 30px 0;
+}
+
+.header__container {
+  justify-content: space-between;
+}
+
+.header__content {
+  gap: 50px;
+}
+
+.header__list {
+  gap: 50px;
+}
+
+.header__link {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #36536B;
+}
+
+.header__link--btn {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #FBFCFE;
+  background-color: #BA4270;
+  padding: 15px 25px;
+  border-radius: 50px;
+}
+
+.burger__btn {
+  width: 20px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  position: relative;
+  display: none;
+  z-index: -1px;
+}
+
+.burger__btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  top: 7px;
+  left: -1px;
+}
+
+.burger__btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  top: 13px;
+  left: -1px;
+}
+
+.burger__close {
+  display: none;
+}
+
+.burger__menu {
+  width: 300px;
+  background: #2c343e;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 40px;
+  padding-bottom: 300px;
+}
+
+.burger__list {
+  padding-left: 30px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.burger__item {
+  margin-bottom: 30px;
+}
+
+.close__btn {
+  position: absolute;
+  right: 10px;
+  font-size: 40px;
+  color: #83888f;
+}
+
+@media screen and (max-width: 705px) {
+  .header__list {
+    gap: 30px;
+  }
+  .header__content {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .burger__btn {
+    display: block;
+  }
+  .header__list {
+    display: none;
+  }
+  .header__link--btn {
+    display: none;
+  }
+}
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.title {
-  text-align: center;
-  font-size: 50px;
 }/*# sourceMappingURL=main.css.map */

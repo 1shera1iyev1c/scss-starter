@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     color: black;
-    font-family: "Aladin";
+    font-family: sans-serif;
 }
 h2 {
     font-size: 30px;
@@ -45,4 +45,10 @@ img {
 
 main {
     flex-grow: 1;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
 }
